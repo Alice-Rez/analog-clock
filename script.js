@@ -19,7 +19,4 @@ function getTime() {
   clock.style.setProperty("--seconds", offsetSeconds + 6 * seconds + "deg");
   clock.style.setProperty("--hours", offsetHours + 30 * hours + "deg");
   clock.style.setProperty("--minutes", offsetMinutes + 6 * minutes + "deg");
-
-  console.log(seconds, hours, minutes);
-  //   requestAnimationFrame(getTime);
 }
