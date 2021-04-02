@@ -26,17 +26,22 @@ html {
 
 header {
   padding: 1.5em;
+  font-style: italic;
+  text-transform: uppercase;
 }
 
 main {
-  width: 100%;
+  /* width: 100%; */
   align-self: center;
 }
 
-svg {
+article {
   width: 90%;
   max-width: 400px;
-  margin: auto;
+}
+
+svg {
+  width: 100%;
 }
 
 .second,
