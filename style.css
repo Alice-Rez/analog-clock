@@ -31,13 +31,19 @@ header {
 }
 
 main {
-  /* width: 100%; */
   align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5em;
 }
 
 article {
-  width: 90%;
-  max-width: 400px;
+  width: 300px;
+}
+
+h2 {
+  margin-bottom: 3em;
 }
 
 svg {
@@ -60,6 +66,65 @@ svg {
 
 .minute {
   transform: rotate(var(--minutes));
+}
+
+.clock-css-body {
+  width: 300px;
+  height: 300px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2),
+    -5px -5px 15px rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.clock-css-hours,
+.clock-css-minutes,
+.clock-css-seconds {
+  position: relative;
+  transform-origin: left;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4),
+    -3px -3px 7px rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.clock-css-hours {
+  width: 70px;
+  height: 0px;
+  border-top: 8px solid rgb(122, 118, 118);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4),
+    -3px -3px 7px rgba(255, 255, 255, 0.4);
+  top: -152px;
+  left: 150px;
+  transform: rotate(var(--hours-css));
+}
+
+.clock-css-minutes {
+  width: 110px;
+  height: 0px;
+  border-top: 4px solid rgb(122, 118, 118);
+  top: -158px;
+  left: 150px;
+  transform: rotate(var(--minutes-css));
+}
+
+.clock-css-seconds {
+  width: 110px;
+  height: 0px;
+  border-top: 2px solid #e83151;
+  top: -162px;
+  left: 150px;
+  transform: rotate(var(--seconds-css));
+}
+
+.center {
+  width: 15px;
+  height: 15px;
+  background-color: #e83151;
+  border: 5px solid rgb(122, 118, 118);
+  border-radius: 50%;
+  position: relative;
+  top: -142.5px;
+  left: 142.5px;
+  z-index: 10;
 }
 
 footer {
