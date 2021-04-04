@@ -4,7 +4,7 @@ Explore [Live demo](https://alice-rez.github.io/analog-clock/)
 
 Simple analog clock created using HTML, CSS and Vanilla JS. Two different designs:
 
-1. totally basic without marks and numbers - created using only pure CSS
+1. basic without marks and numbers - created using only CSS
 2. advanced with marks - created using by SVG
 
 Design with using SVG (𝜋-clock) functioning also as a helper for recalculation between radians and degrees (position of the hand is showing angle between it and y-axis in radians 😊).
